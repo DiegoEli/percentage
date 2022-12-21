@@ -1,22 +1,23 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
-namespace percentage
+namespace percentage 
 {
-    class TrayIcon
+    class TrayIcon 
     {
         [DllImport("user32.dll", CharSet=CharSet.Auto)]
         static extern bool DestroyIcon(IntPtr handle);
 
-        private const int fontSize = 18;
+        //**original-line   |   private const int fontSize = 18;
+        private const int fontSize = 19;
         private const string font = "Segoe UI";
 
         private NotifyIcon notifyIcon;
 
-        public TrayIcon()
+        public TrayIcon() 
         {
             ContextMenu contextMenu = new ContextMenu();
             MenuItem menuItem = new MenuItem();
@@ -39,14 +40,14 @@ namespace percentage
         }
 
         //posible problema al definir el espacio que necesita el Bitmap para mostrar el texto
-        private Bitmap GetTextBitmap(String text, Font font, Color fontColor)
-        {
+        private Bitmap GetTextBitmap(String text, Font font, Color fontColor) 
+        {            
             SizeF imageSize = GetStringImageSize(text, font);
             Bitmap bitmap = new Bitmap((int)imageSize.Width, (int)imageSize.Height);
-            using (Graphics graphics = Graphics.FromImage(bitmap))
+            using (Graphics graphics = Graphics.FromImage(bitmap)) 
             {
                 graphics.Clear(Color.FromArgb(0, 0, 0, 0));
-                using (Brush brush = new SolidBrush(fontColor))
+                using (Brush brush = new SolidBrush(fontColor)) 
                 {
                     graphics.DrawString(text, font, brush, 0, 0);
                     graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
