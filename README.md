@@ -29,13 +29,16 @@ My goal for this project is to keep it as simple as possible. I welcome suggesti
 
 ******************************
 ## PAGE-REPOSITORY_ADD_PERSONAL
+   REFERENCE_ICON
+![](https://i.imgur.com/d7jCVHF.png)
+
 FIRST CODE
 * pageSite:   https://github.com/kas/percentage
 * Font:       Segoe UI     - font defaultWindows
 * sizeFont:   18   (19-ideal)    - scale 100 %
 
 SECOND CODE
-* pageSite:   Microsoft Store_Battery Percentage Icon
+* pageSite:   Microsoft-Store Battery_Percentage_Icon
 * Font:       Segoe UI
 * sizeFont:   09 point
 
