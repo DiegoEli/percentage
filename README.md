@@ -29,8 +29,12 @@ My goal for this project is to keep it as simple as possible. I welcome suggesti
 
 ******************************
 ## PAGE-REPOSITORY_ADD_PERSONAL
-   REFERENCE_ICON
-![](https://i.imgur.com/d7jCVHF.png)
+REFERENCE_ICON_1(version Windows10)
+![CSCSDCDC](https://i.imgur.com/d7jCVHF.png)
+REFERENCE_ICON_2(version Windows10)
+![model-image](https://github.com/DiegoEli/percentage/assets/86540781/cf9ef485-788a-4df8-a253-3726a9bf096e)
+REFERENCE_ICON_3(version Windows11)
+![image_2023-09-27_00-35-35-v3](https://github.com/DiegoEli/percentage/assets/86540781/5b9e46bf-3872-4246-b472-98d5fb1b6791)
 
 FIRST CODE
 * pageSite:   https://github.com/kas/percentage
@@ -54,15 +58,13 @@ SECOND CODE
 ruta: https://github.com/kas/percentage/blob/master/percentage/percentage/TrayIcon.cs
 
 ## LINE-CODE-CHANGE_MODIFY
-* CORRECTION #1
-
 * CORRECTION #2
 https://github.com/OrdosX/percentage
 
 * CORRECTION #3
 
    **LINE 76-original**: String bitmapText = isCharging ? percentage + "*" : percentage;
-
+  
    **LINE 76-change**: String bitmapText = isCharging ? percentage + "%" : percentage + "%";
 
 ## ADD:
